@@ -20,4 +20,3 @@ pipeline {
         failure { echo 'Pipeline FALLÓ: revisa el test en rojo' }
     }
 }
-printf '__pycache__/\n*.pyc\n' > .gitignore
