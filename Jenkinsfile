@@ -8,9 +8,15 @@ pipeline {
             }
         }
 
+        stage('Aprobación') {
+            steps {
+                input message: '¿Desplegar a producción?', ok: 'Desplegar'
+            }
+        }
+
         stage('Deploy') {
             steps {
-                echo 'Pruebas OK en main: aquí iría el despliegue'
+                echo 'Pruebas OK y aprobado: aquí iría el despliegue'
             }
         }
     }
