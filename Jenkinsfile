@@ -9,7 +9,6 @@ pipeline {
         }
 
         stage('Deploy') {
-            when { branch 'main' }
             steps {
                 echo 'Pruebas OK en main: aquí iría el despliegue'
             }
